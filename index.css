@@ -1,63 +1,63 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-#main-heading {
-    text-align: center;
-}
+    #main-heading {
+        text-align: center;
+    }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 200px 150px 100px;
-    column-gap: 10px;
-    row-gap: 10px;
-    margin-top: 10px;
-    align-items: center;
-}
+    .grid-container {
+        display: grid;
+        grid-template-columns: 200px 150px 100px;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-top: 10px;
+        align-items: center;
+    }
 
-#todo-input,
-#todo-date {
-    font-size: 15px;
-    padding: 10px 5px;
-}
+    #todo-input,
+    #todo-date {
+        font-size: 15px;
+        padding: 10px 5px;
+    }
 
-.btn-delete {
-    background-color: maroon;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 15px 0px;
-    cursor: pointer;
-}
+    .btn-delete {
+        background-color: maroon;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 0px;
+        cursor: pointer;
+    }
 
-.btn-add {
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 15px 0px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
+    .btn-add {
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 0px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
 
-/* Disabled Add Button */
-.btn-add:disabled {
-    background-color: #bdbdbd;
-    color: #666;
-    cursor: not-allowed;
-    opacity: 0.7;
-}
+    /* Disabled Add Button */
+    .btn-add:disabled {
+        background-color: #bdbdbd;
+        color: #666;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
 
-/* Enabled Add Button */
-.btn-add:not(:disabled):hover {
-    background-color: darkgreen;
-    transform: scale(1.03);
-}
+    /* Enabled Add Button */
+    .btn-add:not(:disabled):hover {
+        background-color: darkgreen;
+        transform: scale(1.03);
+    }
 
-/* Input focus effect */
-#todo-input:focus,
-#todo-date:focus {
-    outline: none;
-    border: 2px solid green;
-    border-radius: 5px;
-}
+    /* Input focus effect */
+    #todo-input:focus,
+    #todo-date:focus {
+        outline: none;
+        border: 2px solid green;
+        border-radius: 5px;
+    }
