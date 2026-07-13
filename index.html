@@ -2,22 +2,45 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+
     <h1 id="main-heading">Todo App</h1>
-    <div class="grid-container">
-        <input id="todo-input" type="text" placeholder="Enter text here">
-        <input id="todo-date" type="date">
-        <button class='btn-add' onclick="addTodo();">Add</button>
-    </div>
+
+    <form onsubmit="addTodo(); return false;">
+        <div class="grid-container">
+
+            <input
+                id="todo-input"
+                type="text"
+                placeholder="Enter your task here"
+                required
+                oninput="toggleButton()">
+
+            <input
+                id="todo-date"
+                type="date">
+
+            <button
+                id="add-btn"
+                class="btn-add"
+                type="submit"
+                disabled>
+                Add
+            </button>
+
+        </div>
+    </form>
 
     <div class="todo-container grid-container"></div>
 
-
     <script src="index.js"></script>
+
 </body>
 
 </html>
